@@ -34,7 +34,6 @@ Those examples are using the live published version of this boilerplate library 
 - [ECMAScript](https://codesandbox.io/s/7ojknnqjl6?module=%2Fsrc%2Findex.js)
 - [CommonJS](https://codesandbox.io/s/o5q018q609?module=%2Fsrc%2Findex.js)
 - [UMD](https://codesandbox.io/s/jyqqp21rv), this leverages [jsDelivr npm CDN](https://www.jsdelivr.com/features)
-- [Jest tests](https://codesandbox.io/s/github/algolia/rollup-jest-boilerplate/tree/master), this is the current repository loaded in CodeSandbox
 
 ## Developer environment requirements
 
