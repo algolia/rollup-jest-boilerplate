@@ -3,10 +3,10 @@
 > Full featured boilerplate for building JavaScript libraries the modern way.
 
 ## Features
-- 📜 [Rollup.js](https://rollupjs.org/guide/en) configuration providing compatibility with different module systems (CommonJS, ECMAScript modules, UMD for `<script>` tags)
+- 📜 [Rollup.js](https://rollupjs.org/guide/en) configuration providing compatibility with different module systems (CommonJS, ECMAScript, UMD for `<script>` tags)
 - 🃏 [Jest](http://jestjs.io/) setup with watch mode working
 - 🛀 [Renovate](https://github.com/apps/renovate) configuration for auto updates (you have to activate it)
-- 🐈 Yarn lock file with [pinned](https://renovatebot.com/docs/dependency-pinning/) devDependencies
+- 🐈 [Yarn](https://yarnpkg.com/) lock file with [pinned](https://renovatebot.com/docs/dependency-pinning/) devDependencies
 - ✅ [Travis CI](https://travis-ci.com/) setup with pinned Yarn version
 - 🏗 [.nvmrc](https://github.com/creationix/nvm) file to enforce the Node.js version for contributors and continuous integration
 - ⚡️ Ready to publish and use

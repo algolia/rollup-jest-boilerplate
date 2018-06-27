@@ -17,7 +17,7 @@
     "rollup-plugin-node-resolve": "3.3.0"
   },
   "scripts": {
-    "prepublishOnly": "npm run build",
+    "prepare": "npm run build",
     "build": "rollup -c",
     "test": "jest"
   },
