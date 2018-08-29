@@ -4,6 +4,6 @@ before_install:
   - export PATH=$HOME/.yarn/bin:$PATH
 branches:
   only:
-  - master
+    - master
 cache:
   yarn: true
