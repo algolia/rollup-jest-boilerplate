@@ -62,7 +62,7 @@ This will regenerate the build files each time a source file is changed.
 
 ### Previewing umd build in the browser
 
-If you package works in the browser, you can open `dev/index.html` to try it out.
+If your package works in the browser, you can open `dev/index.html` to try it out.
 
 ## Publishing
 
