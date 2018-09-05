@@ -29,7 +29,12 @@
   "renovate": {
     "extends": [
       "config:js-lib"
-    ]
+    ],
+    "automerge": true,
+    "major": {
+      "automerge": false
+    },
+    "automergeType": "branch"
   },
   "files": [
     "dist"
