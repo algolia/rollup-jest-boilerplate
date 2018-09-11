@@ -10,7 +10,7 @@
     "url": "https://github.com/algolia/rollup-jest-boilerplate"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0",
+    "@babel/core": "7.0.1",
     "@babel/preset-env": "7.0.0",
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "23.4.2",
