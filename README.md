@@ -19,7 +19,7 @@ Decide of a new library name, let's say `new-super-library` (🤦🏼‍♀️),
 curl --output rollup-jest-boilerplate.zip -LOk https://github.com/algolia/rollup-jest-boilerplate/archive/master.zip
 unzip rollup-jest-boilerplate.zip
 rm rollup-jest-boilerplate.zip
-mv rollup-jest-boilerplate new-super-library
+mv rollup-jest-boilerplate-master new-super-library
 ```
 
 **Next steps:**
