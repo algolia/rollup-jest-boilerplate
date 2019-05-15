@@ -5,9 +5,9 @@
 ## Features
 - 📜 [Rollup.js](https://rollupjs.org/guide/en) configuration providing compatibility with different module systems (CommonJS, ECMAScript, UMD for `<script>` tags)
 - 🃏 [Jest](http://jestjs.io/) setup with watch mode working
-- 🛀 [Renovate](https://github.com/apps/renovate) configuration for auto updates (you have to activate it)
-- 🐈 [Yarn](https://yarnpkg.com/) lock file with [pinned](https://renovatebot.com/docs/dependency-pinning/) devDependencies
-- ✅ [Travis CI](https://travis-ci.com/) setup with pinned Yarn version
+- 🛀 [Renovate](https://github.com/apps/renovate) configuration for auto updates (you have to activate it via https://github.com/apps/renovate)
+- 🐈 [Yarn](https://yarnpkg.com/) with lock file, [pinned](https://renovatebot.com/docs/dependency-pinning/) devDependencies and fixed Yarn version in .yarnrc using [Yarn policies](https://yarnpkg.com/lang/en/docs/cli/policies/)
+- ✅ [Travis CI](https://travis-ci.com/)
 - 🏗 [.nvmrc](https://github.com/creationix/nvm) file to enforce the Node.js version for contributors and continuous integration
 - ⚡️ Ready to publish and use
 
@@ -58,7 +58,7 @@ When developing you can run:
 yarn watch
 ```
 
-This will regenerate the build files each time a source file is changed.
+This will regenerate the build files each time a source file is changed and serve on http://127.0.0.1:5000.
 
 ### Previewing umd build in the browser
 
