@@ -20,7 +20,7 @@
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-commonjs": "10.0.1",
     "rollup-plugin-node-resolve": "5.2.0",
-    "serve": "11.0.2"
+    "serve": "11.1.0"
   },
   "scripts": {
     "prepare": "yarn build",
