@@ -1,15 +1,27 @@
 {
   "presets": [
-    ["@babel/preset-env", {
-      "modules": false,
-      "targets": {
-        "browsers": "ie >= 11"
+    [
+      "@babel/preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": "ie >= 11"
+        }
       }
-    }]
+    ],
+    "@babel/typescript"
+  ],
+  "plugins": [
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread"
   ],
   "env": {
     "test": {
-      "presets": [["@babel/preset-env"]]
+      "presets": [
+        [
+          "@babel/preset-env"
+        ]
+      ]
     }
   }
 }
