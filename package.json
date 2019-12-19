@@ -4,6 +4,7 @@
   "main": "dist/rollup-jest-boilerplate.cjs.js",
   "module": "dist/rollup-jest-boilerplate.esm.js",
   "browser": "dist/rollup-jest-boilerplate.umd.js",
+  "types": "dist/types/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -11,20 +12,29 @@
   },
   "devDependencies": {
     "@babel/core": "7.7.5",
+    "@babel/plugin-proposal-class-properties": "7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.7.4",
     "@babel/preset-env": "7.7.6",
-    "babel-core": "7.0.0-bridge.0",
+    "@babel/preset-typescript": "7.7.4",
+    "@types/jest": "24.0.23",
     "babel-jest": "24.9.0",
-    "concurrently": "4.1.2",
+    "concurrently": "5.0.1",
     "jest": "24.9.0",
     "rollup": "1.27.13",
     "rollup-plugin-babel": "4.3.3",
     "rollup-plugin-commonjs": "10.1.0",
     "rollup-plugin-node-resolve": "5.2.0",
-    "serve": "11.2.0"
+    "serve": "11.2.0",
+    "ts-jest": "24.2.0",
+    "typescript": "3.7.3"
   },
   "scripts": {
     "prepare": "yarn build",
-    "build": "rollup -c",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch",
+    "build:types": "tsc --emitDeclarationOnly",
+    "build:js": "rollup -c",
+    "build": "yarn build:types && yarn build:js",
     "build:watch": "rollup -c -w",
     "watch": "concurrently 'yarn build:watch' 'yarn serve -l tcp://127.0.0.1'",
     "test": "jest && yarn build"
